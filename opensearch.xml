@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>BharatKhoj</ShortName>
+  <Description>Search BharatKhoj for web content.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16" type="image/png">http://127.0.0.1:5000/static/favicon.png</Image>
+  <Url type="text/html" template="http://127.0.0.1:5000/?query={searchTerms}"/>
+  <Url type="application/x-suggestions+json" template="http://127.0.0.1:5000/suggest?q={searchTerms}"/>
+  <moz:SearchForm>http://127.0.0.1:5000/</moz:SearchForm>
+</OpenSearchDescription>
