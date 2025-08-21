@@ -7,9 +7,9 @@ app = Flask(__name__)
 # It's better practice to load sensitive keys from environment variables
 # For now, you can keep them directly here, but consider using os.environ.get()
 # when deploying for security.
-API_KEY = "AIzaSyCn4exMyxKqx66cnolE19KlEMlL9eYpDXc"
+API_KEY = "Your_Api"
 # IMPORTANT: Replace "e4b2d939f26554ccf" with your actual CSE ID.
-CSE_ID = "e4b2d939f26554ccf" 
+CSE_ID = "ID" 
 
 # Number of results per page for Google Custom Search API
 RESULTS_PER_PAGE = 10 
@@ -116,4 +116,5 @@ def suggest():
     return jsonify(filtered_suggestions[:5]) # Limit to top 5 suggestions
 
 if __name__ == "__main__":
+
     app.run(debug=True)
